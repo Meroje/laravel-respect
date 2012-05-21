@@ -1,9 +1,9 @@
 [submodule "Config"]
 	path = Config
-	url = git://github.com/Respect/Config.git
+	url = https://github.com/Respect/Config.git
 [submodule "Relational"]
 	path = Relational
-	url = git://github.com/Respect/Relational.git
+	url = https://github.com/Respect/Relational.git
 [submodule "Validation"]
 	path = Validation
-	url = git://github.com/Respect/Validation.git
+	url = https://github.com/Respect/Validation.git
