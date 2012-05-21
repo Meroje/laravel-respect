@@ -1,0 +1,12 @@
+language: php
+script: make test
+
+php:
+  - 5.3
+  - 5.4
+
+before_script: 
+  - "sudo pyrus channel-discover respect.li/pear"
+  - "sudo pyrus install respect.li/pear/Data-alpha"
+  - "make foundation"
+  - "phpenv rehash"
