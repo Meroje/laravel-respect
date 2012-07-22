@@ -49,4 +49,16 @@ class ValidatorTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertFalse(Validator::not(Validator::int())->validate(10));
     }
+    function test_country_code()
+    {
+        $this->assertTrue(Validator::countryCode()->validate('BR'));
+    }
+    function test_alwaysValid()
+    {
+        $this->assertTrue(Validator::alwaysValid()->validate('sojdnfjsdnfojsdnfos dfsdofj sodjf '));
+    }
+    function test_alwaysInvalid()
+    {
+        $this->assertFalse(Validator::alwaysInvalid()->validate('sojdnfjsdnfojsdnfos dfsdofj sodjf '));
+    }
 }
